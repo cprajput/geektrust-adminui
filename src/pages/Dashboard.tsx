@@ -93,7 +93,6 @@ const Dashboard = () => {
   const toggleAllUsersSelection = useCallback(() => {
     const paginatedData = getPaginatedData;
     const usersCopy = { ...users };
-    console.log({ paginatedData, usersCopy });
 
     if (getIsAllRowsSelectedOnPage()) {
       paginatedData.forEach((user) => {
